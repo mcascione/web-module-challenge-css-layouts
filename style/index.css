@@ -107,16 +107,8 @@ footer {
     justify-content: center;
 }
 
-button:hover {
-    background-color: white-smoke;
-    border: 1px solid whitesmoke;
-    color: grey;
-}
-
-button a {
-    text-decoration: none;
-    font-size: .75rem;
-    color: inherit;
+h1 {
+    color: black;
 }
 
 .links button {
@@ -135,9 +127,21 @@ button a {
     padding: 5px 10px;
 }
 .contact-me:hover {
-    border: 1px solid whitesmoke;
-    color: grey;
-    background-color: whitesmoke;
+    border: 1px solid black;
+    color: whitesmoke;
+    background-color: grey;
+}
+
+button a {
+    text-decoration: none;
+    font-size: .75rem;
+    color: black;
+}
+
+button:hover {
+    border: 1px solid black;
+    color: white;
+    background-color: darkgray
 }
 
 .fa-brands {
@@ -158,4 +162,28 @@ button a {
 
 .fa-linkedin {
     color: rgb(191, 231, 240);
+}
+
+@media (max-width: 800px){
+    .row {
+        flex-wrap: wrap;
+    }
+    nav {
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 500px){
+    nav {
+        flex-direction: column;
+        margin: 2%;
+    }
+
+    .links {
+        flex-direction: column;
+    }
+
+    h2 {
+        margin: 2%; 
+    }
 }

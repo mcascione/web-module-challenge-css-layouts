@@ -51,65 +51,111 @@ table {
 * {
     box-sizing: border-box;
     font-size: 62.5%;
-    width: 100%;
-}
-
-h1 {
-    font-size: 1.5rem;
-}
-
-h2 {
-    font-size: 1rem;
-}
-
-h3 {
-    font-size: .75rem;
 }
 
 header {
     display: flex;
     justify-content: space-between;
-    height: 10vh;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
-}
-
-.title-image {
-    background-image: url("https://picsum.photos/seed/picsum/200/300");
+    align-content: center;
+    align-items: center;
+    margin: 1%;
     width: 100%;
 }
 
-.title {
-    height: 30vh;
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.title-section {
+    display: flex;
+    justify-content: center;
+}
+
+.background-img {
+    background-image: url("https://picsum.photos/600/400");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-size: large;
+    width: 600px;
+    height: 400px;
+}
+
+.row {
+    display: flex;  
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 2%;
+}
+
+.project {
     text-align: center;
 }
 
-.projects {
-    height: 40vh;
-    display: flex;  
-}
-
-.projects div.project{
-    display: flex;  
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
 footer {
-    background-color: lightgray;
-    height: 20vh;
+    background-color: rgb(246, 243, 243);
+    padding: 2%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
-#contact {
-    display: block;
-    text-align: end;
+button:hover {
+    background-color: white-smoke;
+    border: 1px solid whitesmoke;
+    color: grey;
 }
 
-#contact a {
-    background-color: bisque;
-    padding: 1%;
-    margin: 0 auto;
+button a {
+    text-decoration: none;
+    font-size: .75rem;
+    color: inherit;
+}
+
+.links button {
+    background-color: rgb(240, 246, 245);
+    margin: 2%;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(207, 204, 204);
+}
+
+.contact-me {
+    background-color: rgb(240, 246, 245);
+    text-decoration: none;
+    border: 1px solid rgb(207, 204, 204);
+    padding: 5px 10px;
+}
+.contact-me:hover {
+    border: 1px solid whitesmoke;
+    color: grey;
+    background-color: whitesmoke;
+}
+
+.fa-brands {
+    padding: 2%;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa-brands:hover {
+    opacity: 0.7;
+}
+
+.fa-instagram {
+    color: rgb(236, 153, 153);
+    order: -2;
+}
+
+.fa-linkedin {
+    color: rgb(191, 231, 240);
 }
